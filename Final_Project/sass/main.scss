@@ -1,0 +1,72 @@
+@import url(/sass/sections/_praesent.sass);
+$BG-color: rgba(254, 237, 188, 1);
+$YELLOW: rgba(249, 184, 0, 1);
+$DARK: #262626;
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: Poppins;
+}
+
+body {
+  background-color: $BG-color;
+}
+
+.header {
+  // display: flex;
+  // justify-content: center;
+  margin: 0 auto;
+  &__search-bar {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 60px;
+    padding: 0.5vw 3vw 0.5vw 3vw;
+    margin: 3vh auto;
+  }
+  &__paint-img {
+    width: 127px;
+
+    // margin-left: 12vw;
+  }
+  &__flag-img {
+    margin: 0;
+    width: 67px;
+    height: 24px;
+    margin-top: 1vh;
+  }
+}
+
+.praesent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  gap: 9vw;
+  &__img {
+    width: 28vh;
+    margin: 0;
+  }
+
+  &__qualities {
+    margin: 0;
+  }
+  &__h-5 {
+    font-size: 1vw;
+    font-weight: 700;
+    color: $YELLOW;
+    // line-height: 40px;
+    text-align: left;
+
+    font-family: Poppins;
+  }
+  &__header {
+    font-size: 4vw;
+    font-weight: 700;
+    // line-height: 90px;
+    text-align: left;
+    color: $DARK;
+  }
+}
