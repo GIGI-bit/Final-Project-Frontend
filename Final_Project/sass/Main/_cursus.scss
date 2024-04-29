@@ -1,0 +1,146 @@
+$YELLOW: #f9b800;
+$DARK: #262626;
+
+@mixin square-container($color) {
+  background-color: $color;
+  border-radius: 2vh;
+  padding: 2vh;
+  width: 11vw;
+  margin-bottom: 1vh;
+  @media (max-width: 400px) {
+    width: 20vh;
+    margin-bottom: 2vh;
+    border-radius: 4vh;
+  }
+}
+
+.cursus {
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  margin-top: 40vh;
+  flex-wrap: wrap;
+  gap: 22vh;
+  @media (max-width: 400px) {
+    margin-top: 8vh;
+    gap: 5vh;
+  }
+  &__text-div {
+    margin: 0;
+    margin-top: 10vh;
+  }
+  &__p-header {
+    margin: 0;
+    font-weight: 400;
+    color: $YELLOW;
+    width: 45vh;
+    font-size: 1.5vh;
+    @media (max-width: 400px) {
+      width: 26vh;
+      padding-bottom: 2vh;
+    }
+  }
+
+  &__header {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    width: 40vh;
+    font-size: 3vh;
+    @media (max-width: 400px) {
+      width: 30vh;
+    }
+  }
+  &__button {
+    margin: 0;
+    display: flex;
+    border-radius: 3vh;
+    background-color: white;
+    color: #262626;
+    border-color: transparent;
+    gap: 3vh;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5vh;
+    margin-top: 2vh;
+    padding: 1vh 2vh 1vh 1vh;
+    img {
+      width: 2vh;
+    }
+
+    @media (max-width: 400px) {
+      gap: 10vh;
+    }
+  }
+}
+
+.steps {
+  margin: 0;
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  font-family: Poppin;
+  gap: 2vw;
+  width: 60vh;
+  @media (max-width: 400px) {
+    display: block;
+    flex-wrap: wrap;
+  }
+  &__container-square {
+    padding-top: 5vh;
+    @media (max-width: 400px) {
+      padding: 0;
+    }
+  }
+  &__square-1 {
+    @include square-container(white);
+  }
+  &__square-2 {
+    @include square-container($YELLOW);
+  }
+  &__square-3 {
+    @include square-container($YELLOW);
+    @media (max-width: 400px) {
+      @include square-container(white);
+    }
+  }
+  &__square-4 {
+    @include square-container(white);
+    @media (max-width: 400px) {
+      @include square-container($YELLOW);
+    }
+  }
+  &__number {
+    color: $DARK;
+    font-size: 8vh;
+    font-weight: 700;
+  }
+  &__yellow-span {
+    color: $YELLOW;
+    font-size: 8vh;
+    font-weight: 700;
+  }
+  &__white-span {
+    font-size: 8vh;
+    font-weight: 700;
+    color: white;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 2vh;
+    color: $DARK;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  &__secondary-header {
+    font-weight: 600;
+    color: $DARK;
+    font-size: 1vh;
+  }
+  &__text {
+    margin: 0;
+    font-weight: 350;
+    font-size: 1vh;
+    width: 14vh;
+  }
+}

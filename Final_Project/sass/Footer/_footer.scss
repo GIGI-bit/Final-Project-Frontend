@@ -1,0 +1,88 @@
+$YELLOW: rgba(249, 184, 0, 1);
+$DARK: #262626;
+
+.footer {
+  margin: 0;
+  padding: 30vw 20vw 5vw 20vw;
+  flex-wrap: wrap;
+  @media (max-width: 400px) {
+    padding: 0;
+    padding-top: 20vh;
+  }
+  &__vulputate {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 400px) {
+      display: block;
+      padding-left: 1vh;
+    }
+  }
+
+  &__header {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: $DARK;
+    width: 25vw;
+    text-align: left;
+    @media (max-width: 400px) {
+      font-size: 2vh;
+      width: 25vh;
+    }
+  }
+
+  &__button-div {
+    margin: 0;
+  }
+
+  &__button {
+    margin: 0;
+    display: flex;
+    border-radius: 3vh;
+    background-color: $YELLOW;
+    border-color: transparent;
+    gap: 3vh;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5vh;
+    margin-top: 2vh;
+    padding: 1vh 2vh 1vh 1vh;
+    img {
+      width: 2vh;
+    }
+    @media (max-width: 400px) {
+      gap: 10vh;
+    }
+  }
+  &__conditions {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+    @media (max-width: 400px) {
+      display: block;
+      padding-left: 1.5vh;
+      padding-bottom: 2vh;
+    }
+  }
+  &__copyright {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.7vw;
+    @media (max-width: 400px) {
+      font-size: 0.7vh;
+      padding-left: 0.2vh;
+      padding-top: 2vh;
+    }
+  }
+  &__privacy {
+    margin: 0;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 0.7vw;
+    @media (max-width: 400px) {
+      font-size: 0.7vh;
+    }
+  }
+}

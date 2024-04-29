@@ -1,0 +1,94 @@
+$DARK: #262626;
+
+.tristique {
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  padding-top: 15vw;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 26vh;
+  @media (max-width: 400px) {
+    gap: 2vh;
+    padding-top: 10vh;
+  }
+  &__info {
+    margin: 0;
+  }
+  &__img {
+    width: 30vw;
+    margin: 0;
+    @media (max-width: 400px) {
+      width: 25vh;
+    }
+  }
+  &__header {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5vw;
+    text-align: left;
+    width: 18vw;
+    padding-bottom: 1.5vw;
+    color: $DARK;
+    @media (max-width: 400px) {
+      width: 20vh;
+      font-size: 2.5vh;
+    }
+  }
+}
+
+.checked {
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding-bottom: 1vw;
+  gap: 0.5vw;
+  width: 23vw;
+  @media (max-width: 400px) {
+    width: 25vh;
+    gap: 0.5vh;
+  }
+  &__quality {
+    margin: 0;
+    display: flex;
+    font-weight: 600;
+    font-size: 0.7vw;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    color: $DARK;
+    img {
+      width: 1vw;
+      @media (max-width: 400px) {
+        width: 1vh;
+      }
+    }
+    @media (max-width: 400px) {
+      font-size: 0.8vh;
+      font-weight: 400;
+      padding: 1vh 1.5vh 1vh 1vh;
+      border-radius: 5vh;
+    }
+  }
+  &__button {
+    margin: 0;
+    display: flex;
+    border-radius: 3vh;
+    background-color: $DARK;
+    border-color: transparent;
+    color: white;
+    gap: 3vh;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5vh;
+    margin-top: 2vh;
+    padding: 1vh 2vh 1vh 1vh;
+    img {
+      width: 2vh;
+    }
+    @media (max-width: 400px) {
+      gap: 10vh;
+    }
+  }
+}

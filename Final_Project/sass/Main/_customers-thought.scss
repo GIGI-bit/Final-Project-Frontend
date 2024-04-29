@@ -1,0 +1,97 @@
+$DARK: #262626;
+
+.customers-thought {
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  margin-top: 45vh;
+  flex-wrap: wrap;
+  @media (max-width: 400px) {
+    margin: 0;
+  }
+  &__div {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Poppin;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 2vw 3vw 2vw 3vw;
+    gap: 3vw;
+    margin-left: 3vw;
+    flex-wrap: wrap;
+    @media (max-width: 400px) {
+      width: 20vh;
+      padding: 2vh;
+      border-radius: 4vh;
+    }
+  }
+  &__img {
+    @media (max-width: 400px) {
+      width: 20vh;
+    }
+  }
+  &__header {
+    color: $DARK;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    @media (max-width: 400px) {
+      font-size: 2vh;
+      text-align: center;
+      width: 21vh;
+    }
+  }
+  &__text {
+    color: $DARK;
+    font-weight: 400;
+    text-align: left;
+    width: 32vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    @media (max-width: 400px) {
+      margin: 0;
+      font-size: 1vh;
+      text-align: center;
+      width: 15vh;
+      margin-left: 3vh;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+    }
+  }
+  &__author-name {
+    color: $DARK;
+    font-weight: 700;
+    font-size: 0.7vw;
+    margin-bottom: 0.8vw;
+    @media (max-width: 400px) {
+      font-size: 1.5vh;
+      text-align: center;
+    }
+  }
+  &__buttons {
+    margin: 0;
+    display: flex;
+    width: 6vw;
+    justify-content: left;
+    margin-top: 0.3vw;
+    @media (max-width: 400px) {
+      width: 21vh;
+      padding-top: 1.5vh;
+      padding-bottom: 1vh;
+    }
+  }
+  &__left-arrow {
+    width: 1.5vw;
+    @media (max-width: 400px) {
+      width: 3vh;
+    }
+  }
+  &__right-arrow {
+    width: 1.5vw;
+    @media (max-width: 400px) {
+      width: 3vh;
+    }
+  }
+}

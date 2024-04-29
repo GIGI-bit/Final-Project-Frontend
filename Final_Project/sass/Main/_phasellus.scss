@@ -1,0 +1,88 @@
+$DARK: #262626;
+
+.phasellus {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  gap: 4vw;
+  margin-top: 20vh;
+  @media (max-width: 400px) {
+    margin-top: 10vh;
+  }
+  &__img {
+    width: 30vh;
+    margin: 0;
+    @media (max-width: 400px) {
+      width: 27vh;
+    }
+  }
+
+  &__text-div {
+    margin: 0;
+    padding-top: 5vw;
+  }
+
+  &__header {
+    font-family: Poppins;
+    margin: 0;
+    text-align: left;
+    color: $DARK;
+    font-weight: 700;
+    width: 23vw;
+    font-size: 3.5vh;
+    @media (max-width: 400px) {
+      font-size: 2.5vh;
+      width: 25vh;
+    }
+  }
+
+  &__warning-text {
+    margin: 0;
+    font-weight: 600;
+    color: $DARK;
+    width: 37vw;
+    font-size: 0.9vw;
+    text-align: left;
+    text-decoration: underline;
+    @media (max-width: 400px) {
+      font-size: 1.3vh;
+      width: 28vh;
+      padding-bottom: 1vh;
+      padding-top: 1vh;
+    }
+  }
+  &__paragraph {
+    margin: 0;
+    font-family: 400;
+    width: 29vw;
+    text-align: left;
+    font-size: 0.9vw;
+    color: $DARK;
+    @media (max-width: 400px) {
+      width: 25vh;
+      font-size: 1.3vh;
+      padding-bottom: 2vh;
+    }
+  }
+  &__button {
+    margin: 0;
+    display: flex;
+    border-radius: 3vh;
+    border-color: transparent;
+    gap: 3vh;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5vh;
+    margin-top: 2vh;
+    background-color: $DARK;
+    color: white;
+    padding: 1vh 2vh 1vh 1vh;
+    img {
+      width: 2vh;
+    }
+    @media (max-width: 400px) {
+      gap: 10vh;
+    }
+  }
+}

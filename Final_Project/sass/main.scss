@@ -1,4 +1,10 @@
-@import url(/sass/sections/_praesent.sass);
+@import "./Main/_phasellus.scss";
+@import "./Main/_cursus.scss";
+@import "./Main/_customers-thought";
+@import "./Main/_tristique.scss";
+@import "./Main/_QandA.scss";
+@import "./Footer/_footer.scss";
+
 $BG-color: rgba(254, 237, 188, 1);
 $YELLOW: rgba(249, 184, 0, 1);
 $DARK: #262626;
@@ -10,15 +16,68 @@ $DARK: #262626;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: $BG-color;
+  flex-wrap: wrap;
+}
+.main {
+  margin: 0;
+  padding: 0;
+  &__div {
+    margin: 0;
+    padding: 0vw 0vw 0vw 17vw;
+    @media (max-width: 500px) {
+      padding-left: 1vh;
+      margin: 0;
+    }
+  }
+}
+.first-yellow-rectangle {
+  position: absolute;
+  width: 100vw;
+  margin-top: 19vw;
+  z-index: -1;
+  @media (max-width: 500px) {
+    margin-top: 105vh;
+    transform: scale(5, 7);
+  }
+}
+.second-black-rectangle {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  margin-top: 59vw;
+  @media (max-width: 500px) {
+    margin-top: 229vh;
+    transform: scale(5, 8);
+  }
+}
+.third-yellow-rectangle {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  margin-top: 145vw;
+  @media (max-width: 500px) {
+    margin-top: 379vh;
+    transform: scale(5, 6);
+  }
+}
+.fourth-black-rectangle {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  margin-top: 205vw;
+  @media (max-width: 400px) {
+    margin-top: 514vh;
+    transform: scale(5, 6);
+  }
 }
 
 .header {
-  // display: flex;
-  // justify-content: center;
   margin: 0 auto;
   &__search-bar {
-    width: 80%;
+    width: 65%;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -28,8 +87,6 @@ body {
   }
   &__paint-img {
     width: 127px;
-
-    // margin-left: 12vw;
   }
   &__flag-img {
     margin: 0;
@@ -41,32 +98,95 @@ body {
 
 .praesent {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  gap: 9vw;
+  gap: 3vw;
   &__img {
-    width: 28vh;
+    width: 30vh;
     margin: 0;
+    @media (max-width: 400px) {
+      width: 25vh;
+    }
   }
 
   &__qualities {
     margin: 0;
+    flex-wrap: wrap;
   }
   &__h-5 {
     font-size: 1vw;
     font-weight: 700;
     color: $YELLOW;
-    // line-height: 40px;
     text-align: left;
-
     font-family: Poppins;
+    @media (max-width: 400px) {
+      font-size: 1.5vh;
+    }
   }
   &__header {
     font-size: 4vw;
     font-weight: 700;
-    // line-height: 90px;
     text-align: left;
     color: $DARK;
+    @media (max-width: 400px) {
+      font-size: 2vh;
+    }
+  }
+  &__checked {
+    display: flex;
+    margin: 0;
+    justify-content: left;
+    width: 30vw;
+    gap: 1vw;
+    margin-top: 2vw;
+    flex-wrap: wrap;
+    @media (max-width: 400px) {
+      width: 20vh;
+    }
+  }
+  &__button {
+    margin: 0;
+    display: flex;
+    border-radius: 3vh;
+    background-color: $YELLOW;
+    border-color: transparent;
+    gap: 3vh;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5vh;
+    margin-top: 2vh;
+    padding: 1vh 2vh 1vh 1vh;
+    img {
+      width: 2vh;
+    }
+    @media (max-width: 400px) {
+      gap: 10vh;
+    }
+  }
+}
+
+.checked-div {
+  &__quality {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 3vw;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 0.7vw;
+    padding: 0.5vw;
+    gap: 0.5vw;
+    img {
+      width: 1vw;
+      @media (max-width: 400px) {
+        width: 1vh;
+      }
+    }
+    @media (max-width: 400px) {
+      font-size: 1vh;
+      padding: 0.5vh;
+    }
   }
 }
